@@ -1,4 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
+import * as test1Dao from "@/dao/test1";
+import { asInt } from "@/util/util";
 
 export async function GET(
   req: NextRequest,
@@ -17,11 +19,11 @@ export async function GET(
         name: "json",
       });
     case "query":
-      const id = req.nextUrl.searchParams.get("id");
-      return NextResponse.json({
-        id: id || "null",
-        name: `query: ${id}`,
-      });
+      const id = asInt(req.nextUrl.searchParams.get("id"));
+      if (!id) return NextResponse.json(null);
+
+      const po = await test1Dao.getById(id);
+      return NextResponse.json(po);
     default:
       return NextResponse.json({
         code: "404",
