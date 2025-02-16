@@ -14,16 +14,20 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4.0.0",
+    "@eslint/eslintrc": "^3.2.0",
+    "@tailwindcss/postcss": "^4.0.6",
     "@types/node": "^22.13.4",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
+    "@types/pg": "^8.11.11",
+    "@types/pg-pool": "^2.0.6",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "eslint": "^9.20.1",
     "eslint-config-next": "15.1.7",
-    "postcss": "^8",
-    "tailwindcss": "^4.0.0",
-    "typescript": "^5"
+    "pg": "^8.13.3",
+    "pg-pool": "^3.7.1",
+    "postcss": "^8.5.2",
+    "tailwindcss": "^4.0.6",
+    "typescript": "^5.7.3"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
