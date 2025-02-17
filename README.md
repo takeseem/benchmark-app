@@ -1,3 +1,11 @@
+## .env.local
+
+```
+# DATABASE_URL=postgresql://dev:dev@host:5432/benchmark_app?sslmode=verify-ca&sslrootcert=root.crt
+DATABASE_URL=postgresql://dev:dev@host:5432/benchmark_app?sslmode=verify-full&sslrootcert=root.crt&sslcert=dev-all.crt&sslkey=dev.key
+```
+
+----
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
